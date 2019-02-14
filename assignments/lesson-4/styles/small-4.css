@@ -1,0 +1,45 @@
+* { 
+    margin: 0; 
+    box-sizing: border-box; 
+}
+header, footer {
+    margin: 1.2rem auto;
+    padding: 2rem;
+    max-width: 1500px;
+    text-align: center;
+    background-color: #41d3f4;
+    color: #000000;
+}
+#title {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 32px;
+    font-family: Ubuntu;
+    color: black;
+}
+nav {
+    background-color: #43f441;
+    font-family: Ubuntu;
+    text-align: center;
+    line-height: 30px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav li:hover {
+    background-color: #1ca010;
+}
+.motto {
+    font-family: Ubuntu;
+}
+footer {
+    font-size: 15px;
+}
+
+  

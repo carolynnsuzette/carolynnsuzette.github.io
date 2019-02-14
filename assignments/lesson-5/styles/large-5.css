@@ -1,0 +1,33 @@
+@media only screen and (min-width: 600px) {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        width: 40em;
+        margin: auto;  
+    }
+    li {
+        float: left;
+    }
+    li a {
+        display: block;
+        color: white;
+        text-align: center; 
+        padding: 14px 16px;
+        text-decoration: none;  
+    }
+    li a:hover {
+        background-color: #111;
+    }
+    #nav-mobile {
+        display: none;
+    }
+    #nav-desk {
+        display: block;
+    }
+    .current {
+        background-color: #111;
+    }
+}
