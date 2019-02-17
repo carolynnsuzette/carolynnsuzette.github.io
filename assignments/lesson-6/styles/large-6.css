@@ -1,0 +1,65 @@
+@media only screen and (min-width: 600px) {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        width: 40em;
+        margin: auto;  
+    }
+    li {
+        float: left;
+    }
+    li a {
+        display: block;
+        color: white;
+        text-align: center; 
+        padding: 14px 16px;
+        text-decoration: none;  
+    }
+    li a:hover {
+        background-color: #111;
+    }
+    #nav-mobile {
+        display: none;
+    }
+    #nav-desk {
+        display: block;
+    }
+    .current {
+        background-color: #111;
+    }
+    .forecast {
+        display: block;
+    }
+    .franklin-large {
+        display: block;
+    }
+    .franklin-small {
+        display: none;
+        width: 100%;
+    }
+    .stats-large {
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        background: radial-gradient(#eee, #2762d6);
+        border: 1px solid #000;
+        padding: 1rem;
+        box-shadow: 0 0 30px #fff;
+    }
+    .stats-small {
+        display: none;
+    }
+    .imgwrap-large {
+        display: block;
+        position: relative;
+        width: 75%;
+        margin: 20px auto;
+    }
+    .imgwrap-small {
+        display: none;
+    }
+}
