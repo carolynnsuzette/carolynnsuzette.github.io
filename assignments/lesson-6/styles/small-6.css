@@ -8,7 +8,7 @@ header, footer {
     padding: 1rem;
     max-width: 1500px;
     text-align: center;
-    background-color: #41d3f4;
+    background-color: #1ba7ac;
     color: #000000;
 }
 #title {
@@ -91,7 +91,7 @@ td {
     text-align: center;
 }
 th {
-    background-color: #41d3f4
+    background-color: #1ba7ac
 }
 table{
     margin: 0 auto;
