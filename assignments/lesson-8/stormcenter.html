@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Idaho Weather Prediction</title>
+        <meta charset="utf-8">
+        <meta name="description" content="This is a weather website for constant updates on the weather in the state of Idaho.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small-8.css">
+        <link rel="stylesheet" href="styles/medium-8.css">
+        <link rel="stylesheet" href="styles/large-8.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair-Display">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open-Sans">
+    </head>        
+    <body>            
+        <header id="header">            
+            <div id="title">
+                <img id="logo" src="images/weather-logo.jpg" width= "100" alt="A sun with rain clouds over it">
+                Idaho Weather Prediction</div>
+            <div class="motto">Where your planning begins</div>
+        </header>       
+        <nav id="nav-desk">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="preston-8.html">Preston</a></li>
+                <li><a href="sodaSprings/">Soda Springs</a></li>
+                <li><a href="fishHaven/">Fish Haven</a></li>
+                <li><a href="stormcenter.html" class="current">Storm Center</a></li>
+                <li><a href="gallery-8.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <nav id="nav-mobile">
+            <button class="menuButton" onclick="toggleMenu()">&equiv; Menu</button>
+            <ul id="menu" class=hidden>
+                <li><a href="#">Home</a></li>
+                <li><a href="preston-8.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li class="current"><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery-8.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div id="town">Please complete the following form:</div>
+            <form action="thanks.html" method="get" id="form">
+                <div>
+                    <br>
+                    <h3>Personal Information</h3>
+                    <label for="fullName">Full Name:* </label>
+                    <input type="text" id="fullName" name="fullName" pattern= "[A-Za-z].{5,}" required>
+                </div>
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" placeholder="name@example.com">
+                </div>
+                <div>
+                    <label for="phone">Phone:* </label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div>
+                    <label for="zipCode">Zip Code:* </label>
+                    <input type="number" id="zipCode" name="zipCode" required>
+                </div>
+                <div>
+                    <br>
+                    <h3>Storm Details</h3>
+                    <label for="stormDate">Storm Date: </label>
+                    <input type="date" id="stormDate" name="stormDate">
+                </div>
+                <div>
+                    <label for="stormType">Storm Type: </label>
+                    <input type="text" id="stormType" name="stormType" list="stormList" 
+                        pattern="[Ff]lash [Ff]lood|[Hh]ail|[Hh]urricane|[Tt]hunderstorm|[Tt]ornado">
+                    <datalist id=stormList>
+                        <option>Flash Flood</option>
+                        <option>Hail</option>
+                        <option>Hurricane</option>
+                        <option>Thunderstorm</option>
+                        <option>Tornado</option>
+                    </datalist>
+                </div>
+                <div class="slidecontainer">
+                    <br>
+                    <label for="myRange">Storm Severity (1 to 10): </label>
+                    <input type="range" min="1" max="10" value="5" class="slider" id="myRange" name="stormSev">
+                </div>
+                <p>Value: <span id="rangeValue"></span></p>
+                <div>
+                    <br>
+                    <label for="stormRegion">Storm Region: </label>
+                    <select id=stormRegion>
+                        <option selected disabled>Select Region...</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodaSprings">Soda Springs</option>
+                        <option value="fishHaven">Fish Haven</option>
+                    </select>        
+                </div>
+                <div>
+                    <br>
+                    <label for="yes">User in Danger: </label>
+                    <div>
+                        <input type="radio" id="yes" name="dangerLevel" value="yes">
+                        <label for="yes">Yes</label>
+                    </div> 
+                    <div>
+                        <input type="radio" id="maybe" name="dangerLevel" value="maybe">
+                        <label for="maybe">Maybe</label>
+                    </div>  
+                    <div>
+                        <input type="radio" id="no" name="dangerLevel" value="no">
+                        <label for="no">No</label>
+                    </div>                   
+                </div>
+                <div>
+                    <br>
+                    <h3>Comments</h3>
+                    <br>
+                    <label for="comment">Please enter any additional information or comments below:</label>
+                    <textarea rows="4" cols="50" name="comment" id="comment"></textarea>
+                    <p>*indicates that it is a required field.</p>
+                    <br>
+                    <input type="submit" value="Submit" class="button">
+                </div>
+            </form>
+        </main>
+        <footer>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.72628248693!2d-111.91534462316936!3d42.0998053121034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1550334619669" width="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <p>
+                &copy; <span id="copyright-year"></span> | Idaho Weather Prediction | Carolynn Nottingham
+            </p>
+            <div id="currentDate"></div>
+        </footer>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/stormcenter.js"></script>
+    </body>
+</html>
