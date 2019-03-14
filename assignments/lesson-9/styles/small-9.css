@@ -205,14 +205,7 @@
     .button:hover {
         background-color: #079196;
     }
-    .boxed {
-        width: 300px;
-        border: 25px solid green;
-        padding: 25px;
-        margin: 25px;
-    }
-
-      }
+}
 
 @media only screen and (max-width: 600px) {
     #imageContainer {
@@ -221,8 +214,5 @@
         grid-template-columns: 1fr;
         width: 300px;
         margin: 20px auto;    
-    }
-    #section article {
-        
     }
 }

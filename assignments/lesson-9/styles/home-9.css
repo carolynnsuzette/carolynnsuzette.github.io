@@ -1,7 +1,22 @@
+.boxed {
+    width: 600px;
+    border: 1px solid black;
+    padding: 50px;
+    margin: 0 auto;
+    margin-top: 20px;
+    clear: left;
+}
+.boxed img {
+    width: 150px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
 article {
     border: 1px solid black;
     padding: 10px;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 h1 {
