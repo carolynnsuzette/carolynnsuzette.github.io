@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Idaho Weather Prediction</title>
+        <meta charset="utf-8">
+        <meta name="description" content="This is a weather website for constant updates on the weather in the state of Idaho.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small-10.css">
+        <link rel="stylesheet" href="styles/medium-10.css">
+        <link rel="stylesheet" href="styles/large-10.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    </head>        
+    <body>            
+        <header id="header">            
+            <div id="title">
+                <img id="logo" src="images/weather-logo.jpg" width= "100">
+                Idaho Weather Prediction</div>
+            <div class="motto">Where your planning begins</div>
+        </header>       
+        <nav id="nav-desk">
+            <ul>
+                <li><a href="home-10.html">Home</a></li>
+                <li><a href="preston-10.html">Preston</a></li>
+                <li><a href="sodaSprings/">Soda Springs</a></li>
+                <li><a href="fishHaven/">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery-10.html" class="current">Gallery</a></li>
+            </ul>
+        </nav>
+        <nav id="nav-mobile">
+            <button class="menuButton" onclick="toggleMenu()">&equiv; Menu</button>
+            <ul id="menu" class=hidden>
+                <li><a href="home-10.html">Home</a></li>
+                <li><a href="preston-10.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery-10.html" class="active">Gallery</a></li>
+            </ul>
+        </nav>
+        <main class="container">
+            <div id="town">Gallery</div>
+            <div id="imageContainer">
+                <div class="column">
+                    <figure class="shadow">
+                        <img src="images/galleryimg1.jpg" alt="Picture of Idaho" width=300>
+                        <figcaption>Preston Idaho</figcaption>
+                    </figure>
+                    <figure class="shadow">
+                        <img src="images/galleryimg2.jpg" alt="Picture of Idaho" width=300>
+                        <figcaption>Soda Springs Idaho</figcaption>
+                    </figure>
+                </div>
+                <div class="column">
+                    <figure class="shadow">
+                        <img src="images/galleryimg3.jpg" alt="Picture of Idaho" width=300>
+                        <figcaption>Fish Haven Idaho</figcaption>
+                    </figure>
+                    <figure class="shadow">
+                        <img src="images/galleryimg4.jpg" alt="Picture of Idaho" width=300>
+                        <figcaption>Preston Idaho</figcaption>
+                    </figure>
+                </div>
+                <div class="column">
+                    <figure class="shadow">
+                        <img src="images/galleryimg5.jpg" alt="Picture of Idaho" width=300>
+                        <figcaption>Soda Springs Idaho</figcaption>
+                    </figure>
+                    <figure class="shadow">
+                        <img src="images/galleryimg6.jpg" alt="Picture of Idaho" width=300>
+                        <figcaption>Fish Haven Idaho</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div id="imageContainerMed">
+                    <div class="column">
+                        <figure>
+                            <img src="images/galleryimg1.jpg" alt="Picture of Idaho" width=250>
+                            <figcaption>Photo of Preston Idaho</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/galleryimg2.jpg" alt="Picture of Idaho" width=250>
+                            <figcaption>Photo of Soda Springs Idaho</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/galleryimg3.jpg" alt="Picture of Idaho" width=250>
+                            <figcaption>Photo of Fish Haven Idaho</figcaption>
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <figure>
+                            <img src="images/galleryimg4.jpg" alt="Picture of Idaho" width=250>
+                            <figcaption>Photo of Storm Center Idaho</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/galleryimg5.jpg" alt="Picture of Idaho" width=250>
+                            <figcaption>Photo of Preston Idaho</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/galleryimg6.jpg" alt="Picture of Idaho" width=250>
+                            <figcaption>Photo of Soda Springs Idaho</figcaption>
+                        </figure>
+                    </div>
+                </div>
+        </main>
+        <footer>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.72628248693!2d-111.91534462316936!3d42.0998053121034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1550334619669" width="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <p>
+                &copy; <span id="copyright-year"></span> | Idaho Weather Prediction | Carolynn Nottingham
+            </p>
+            <div id="currentDate"></div>
+        </footer>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/hamburger.js"></script>
+    </body>
+</html>

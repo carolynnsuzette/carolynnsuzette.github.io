@@ -1,0 +1,40 @@
+.boxed {
+    width: 600px;
+    border: 1px solid black;
+    padding: 50px;
+    margin: 0 auto;
+    margin-top: 20px;
+    clear: left;
+}
+.boxed img {
+    width: 150px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+article {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: blue;
+    font-size: 16pt;
+}
+
+h2 {
+    color: red;
+    font-size: 14pt;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2em;
+}
+
+#section img {
+    width: 200px;
+}
