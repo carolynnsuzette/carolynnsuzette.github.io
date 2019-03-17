@@ -21,14 +21,23 @@ weatherRequest.onload = function () {
 
     console.log(weatherData);
 
+    document.getElementById("currently").innerHTML =
+        weatherData.weather[0].main;
+
     document.getElementById("current-temp").innerHTML =
         weatherData.main.temp;
-
-    document.getElementById("windSpeed").innerHTML =
-        weatherData.wind.speed;
-
+        
+    document.getElementById("high").innerHTML =
+        weatherData.main.temp_max;
+        
     document.getElementById("windChill").innerHTML =
         weatherData.wind.deg;
+        
+    document.getElementById("humidity").innerHTML =
+        weatherData.main.humidity;
+
+    document.getElementById("windSpeed").innerHTML =
+        weatherData.wind.speed;    
 }
 
 
