@@ -1,0 +1,76 @@
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        width: 40em;
+        margin: auto;  
+    }
+    li {
+        display: inline-flex;
+    }
+    li a {
+        display: block;
+        color: white;
+        text-align: center; 
+        padding: 14px 16px;
+        text-decoration: none;  
+    }
+    li a:hover {
+        background-color: #111;
+    }
+    #nav-mobile {
+        display: none;
+    }
+    #nav-desk {
+        display: block;
+    }
+    .current {
+        background-color: #111;
+    }
+    .forecast {
+        display: block;
+    }
+    .franklin-large {
+        display: block;
+    }
+    .franklin-small {
+        display: none;
+        width: 100%;
+    }
+    .stats-large {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: radial-gradient(#eee, #2762d6);
+        border: 1px solid #000;
+        padding: 1rem;
+        box-shadow: 0 0 30px #fff;
+    }
+    .stats-small {
+        display: none;
+    }
+    .imgwrap-large {
+        display: block;
+        position: relative;
+        width: 90%;
+        margin: 20px auto;
+    }
+    .imgwrap-small {
+        display: none;
+    }
+    #imageContainerMed {
+        display: flex;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        position: relative;
+        width: 600px;
+        margin: 20px auto;
+    }
+    .column {
+        padding: 25px;
+    }
+}

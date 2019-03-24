@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Idaho Weather Prediction</title>
+        <meta charset="utf-8">
+        <meta name="description" content="This is a weather website for constant updates on the weather in the state of Idaho.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    </head>        
+    <body>            
+        <header id="header">            
+            <div id="title">
+                <img id="logo" src="images/weather-logo.jpg" width= "100">
+                Idaho Weather Prediction</div>
+            <div class="motto">Where your planning begins</div>
+        </header>       
+        <nav id="nav-desk">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="preston.html" class="current">Preston</a></li>
+                <li><a href="sodaSprings.html">Soda Springs</a></li>
+                <li><a href="fishHaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <nav id="nav-mobile">
+            <button class="menuButton" onclick="toggleMenu()">&equiv; Menu</button>
+            <ul id="menu" class=hidden>
+                <li><a href="home.html">Home</a></li>
+                <li class="current"><a href="preston.html">Preston</a></li>
+                <li><a href="sodaSprings.html">Soda Springs</a></li>
+                <li><a href="fishHaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main class="container">
+            <div id="town">Preston Idaho</div>
+            <div class="imgwrap-large">
+                <img class="franklin-large" src="images/franklin100.jpg" alt="Preston Idaho">
+                <section class="stats-large">
+                    <h3>Weather Summary</h3>
+                    <p><span>Currently: </span><span id="currently"></span></p>
+                    <p><span>Temperature: </span><span id="current-temp"></span>&deg; F</p>
+                    <p><span>High: </span><span id="high"></span>&deg; F</p>
+                    <p><span>Wind Chill: </span><span id="windChill"></span>&deg; F</p>
+                    <p><span>Humidity: </span><span id="humidity"></span>%</p>
+                    <p><span>Wind Speed: </span><span id="windSpeed"></span> mph</p>
+                </section>
+            </div>
+            <div class="imgwrap-small">
+                <img class="franklin-small" src="images/franklin50.jpg" alt="Preston Idaho">        
+                <section class="stats-small">
+                    <h3>Weather Summary</h3>
+                    <p><span>Currently: </span><span id="currently"></span></p>
+                    <p><span>Temperature: </span><span id="current-temp"></span>&deg; F</p>
+                    <p><span>High: </span><span id="high"></span>&deg; F</p>
+                    <p><span>Wind Chill: </span><span id="windChill"></span>&deg; F</p>
+                    <p><span>Humidity: </span><span id="humidity"></span>%</p>
+                    <p><span>Wind Speed: </span><span id="windSpeed"></span> mph</p>
+                </section>
+            </div>    
+        <section>
+        </section>
+        <div class="forecast">
+            <div id="fiveDay">5 Day Forecast</div>
+            <table style="width:25%">
+                <tr>
+                    <th id="day0"></th>
+                    <th id="day1"></th> 
+                    <th id="day2"></th>
+                    <th id="day3"></th>
+                    <th id="day4"></th>
+                </tr>
+                <tr>
+                    <td><img id="icon0"><br><span id="temp0"></span>&deg F</td>
+                    <td><img id="icon1"><br><span id="temp1"></span>&deg F</td>
+                    <td><img id="icon2"><br><span id="temp2"></span>&deg F</td>
+                    <td><img id="icon3"><br><span id="temp3"></span>&deg F</td>
+                    <td><img id="icon4"><br><span id="temp4"></span>&deg F</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="weatherSummary"></div>
+            <div>
+            </div>
+            
+        </div>
+
+        <article>
+            <div class="prestonBox">
+                <h1>Sunny Days Ahead for Preston</h1>
+                <p><img src="images/home-4.jpg" alt="Preston Idaho">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime sunt voluptates eius dolor molestias deserunt magni nisi harum et rem, laborum, consequuntur, maiores eaque sed at nemo aperiam deleniti perferendis.
+                    <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste delectus quis quia itaque, incidunt ex vero autem minus sequi. Natus nesciunt ducimus excepturi quod consequuntur neque dolorem fuga totam dolore.
+                    <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, eos cumque veritatis perspiciatis quaerat non quam quos quia maxime voluptate natus vel facere commodi numquam minima quasi? Quo, quisquam est?
+                    <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, eos cumque veritatis perspiciatis quaerat non quam quos quia maxime voluptate natus vel facere commodi numquam minima quasi? Quo, quisquam est?
+                </p>  
+            </div>
+        </article>
+        </main>
+        <footer>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.72628248693!2d-111.91534462316936!3d42.0998053121034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1550334619669" width="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <p>
+                &copy; <span id="copyright-year"></span> | Idaho Weather Prediction | Carolynn Nottingham | OpenWeatherMap.org
+            </p>
+            <div id="currentDate"></div>
+        </footer>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/windchill.js"></script>
+        <script src="scripts/preston.js"></script>
+    </body>
+</html>

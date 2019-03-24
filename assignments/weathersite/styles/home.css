@@ -1,0 +1,71 @@
+.boxed {
+    display: block;
+    padding-top: 1rem;
+    color: black;
+    font-size: 1rem;
+    text-align: left;
+    padding: .2em;
+    margin: 0 auto;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    width: 700px;
+    height: 500px;
+    padding: 50px;
+    margin: 0 auto;
+    margin-top: 20px;
+    clear: left;
+    background-color: #e2e5e5;
+}
+.boxed img {
+    width: 200px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    float: right;
+}
+
+article {
+    display: block;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    color: black;
+    font-size: 1rem;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+h1 {
+    color: #1ba7ac;
+    font-size: 18pt;
+}
+
+h2 {
+    color: black;
+    font-size: 10pt;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2em;
+    margin-bottom: 20px;
+}
+section :nth-child(1) {
+    background-color: #e2e5e5;
+}
+section :nth-child(2) {
+    background-color: #e2e5e5;
+}
+section :nth-child(3) {
+    background-color: #e2e5e5;
+}
+
+#section img {
+    width: 200px;
+    margin: 0 auto;
+
+}
