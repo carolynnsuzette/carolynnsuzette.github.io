@@ -1,4 +1,4 @@
-    * { 
+* { 
         margin: 0; 
         box-sizing: border-box;
         /*font-family: "Playfair Display";*/
@@ -98,6 +98,9 @@
     table, th, td {
         border: 1px solid rgb(77, 76, 76);
         border-collapse: collapse;
+        padding: 30px;
+        height: 20px;
+        font-size: 20px;
     }
     td {
         font-family: "Open Sans";
@@ -128,9 +131,6 @@
         width: 100%;
     }
     .hidden {
-        display: none;
-    }
-    #imageContainer {
         display: none;
     }
     #imageContainerMed {
@@ -234,9 +234,9 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
     #imageContainer {
-        display: grid;
+        display: flex;
         position: relative;
         grid-template-columns: 1fr;
         width: 300px;

@@ -63,12 +63,14 @@
         display: none;
     }
     #imageContainerMed {
-        display: flex;
         display: grid;
         grid-template-columns: 2fr 2fr;
         position: relative;
         width: 600px;
         margin: 20px auto;
+    }
+    #imageContainer {
+        display: none;
     }
     .column {
         padding: 25px;
