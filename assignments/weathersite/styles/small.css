@@ -92,15 +92,15 @@
     #fiveDay {
         text-align: center;
         font-weight: bold;
+        font-size: 20px;
         margin-bottom: 10px;
     }
     /*five day forecast*/
     table, th, td {
         border: 1px solid rgb(77, 76, 76);
         border-collapse: collapse;
-        padding: 30px;
-        height: 20px;
-        font-size: 20px;
+        padding: 15px;
+        font-size: 18px;
     }
     td {
         font-family: "Open Sans";
@@ -232,6 +232,20 @@
         margin-bottom: 20px;
         float: right;
     }
+    #smallimg {
+        display: none;
+        flex-wrap: none;
+        float: none;
+    }
+    #largeimg {
+        display: block;
+    }
+    #h1large {
+        display: block;
+    }
+    #h1small {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -241,5 +255,36 @@
         grid-template-columns: 1fr;
         width: 300px;
         margin: 20px auto;    
+    }
+    .prestonBox{
+        display: block;
+        padding-top: 1rem;
+        color: black;
+        font-size: 1rem;
+        text-align: left;
+        padding: .2em;
+        margin: 0 auto;
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+        width: 400px;
+        height: 900px;
+        padding: 50px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        clear: left;
+        background-color: #e2e5e5;
+    }
+    #smallimg {
+        display: block;
+    }
+    #largeimg {
+        display: none;
+    }
+    #h1large {
+        display: none;
+    }
+    #h1small {
+        display: block;
     }
 }

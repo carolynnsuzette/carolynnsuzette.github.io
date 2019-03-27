@@ -71,6 +71,7 @@
     }
     .shadow:hover {
         background-color: rgba(196, 193, 193, 0.568);
+        box-shadow: 10px 10px 15px -2px #628ca6;
     }
     .shadow {
         padding: 1rem;
