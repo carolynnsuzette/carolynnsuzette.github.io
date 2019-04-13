@@ -1,0 +1,99 @@
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+/*navigation menu*/
+.nav-large {
+    display: none;
+}
+.nav-small {
+    display: none;
+}
+.nav-med {
+    display: block;
+    overflow: hidden;
+}
+.nav-med #current {
+    color: #90BEDD;
+}
+  .nav-med a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: merriweather;
+}
+
+/* logo */
+.logo-med {
+    float: both;
+    margin-left: 150px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*nav-center*/
+.nav-center-med {
+    width: 510px;
+    margin: 0 auto;
+}
+
+/*dropdown menu*/
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: merriweather;
+    margin: 0;
+    cursor: pointer;
+  }
+  .nav-med a:hover, .dropdown:hover .dropbtn {
+    color: #90BEDD;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 40px;
+  }
+  .dropdown-content a {
+    float: none;
+    color: #6C0E23;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown-content a:hover {
+    color: #90BEDD;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .homeBoxPosition {
+    grid-template-columns: 1fr;
+  }
+    /*temple boxes*/
+    .templeBox {
+        background-color: lightgrey;
+        width: 200px;
+        height: 250px;
+        padding: 50px;
+        margin: 18px;
+      }
+      .templeBoxPosition {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+      }
+}

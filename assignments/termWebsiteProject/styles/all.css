@@ -1,0 +1,211 @@
+/*site header and footer full screen*/
+body {
+    margin: 0;
+}
+
+/*header and footer*/
+header, footer {
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    background-color: #6C0E23;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    border-bottom: #90BEDD solid 5px;
+}
+footer {
+    border-top: #90BEDD solid 5px;
+}
+
+/*site title*/
+.site-title {
+    margin-right: 150px;
+    margin-top: 50px;
+}
+
+/*fonts throughout*/
+h1 {
+    font-family: lobster;
+    font-size: 40px;
+    text-align: center;
+    color: #6C0E23;
+}
+h2 {
+    font-family: merriweather;
+    font-size: 25px;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+h3 {
+    font-family: merriweather;
+    font-size: 18px;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+p, ul {
+    font-family: merriweather;
+    font-size: 15px;
+    margin-left: 50px;
+    margin-right: 150px;
+}
+
+/*fonts for boxes*/
+#boxFonts h2 {
+    font-family: merriweather;
+    font-size: 25px;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+#boxFonts p, #boxFonts ul {
+    font-family: merriweather;
+    font-size: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/*fonts for footer*/
+.footerText {
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-family: merriweather;
+}
+
+/*table*/
+#table {
+    font-family: merriweather;
+    border-collapse: collapse;
+    width: 85%;
+    margin-left: 100px;
+}
+#table td, #table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#table tr:hover {
+    background-color: #ddd;
+}
+#table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #90BEDD;
+    color: black;
+}
+
+/*home boxes*/
+.homeBox {
+    background-color: lightgrey;
+    width: 300px;
+    height: 475px;
+    padding: 50px;
+    margin: 25px auto;
+}
+.homeBoxPosition {
+  display: grid;
+  position: relative;
+}
+
+/*reservation button for home page*/
+.homeButton {
+    background-color: #6C0E23;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: merriweather;
+    font-size: 15px;    
+    cursor: pointer;
+    margin-left: 85px;
+}
+.homeButton:hover {
+    background-color: rgb(80, 9, 24);
+}
+
+/*temple buttons*/
+.templeButton {
+    background-color: #90BEDD;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: merriweather;
+    font-size: 15px;    
+    cursor: pointer;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.templeButton:hover {
+    background-color: rgb(122, 172, 206);
+}
+
+/*reservation form*/
+.reservationBox {
+    background-color: lightgrey;
+    width: 600px;
+    height: 950px;
+    padding: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#form input {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: "merriweather";
+    font-size: 15px;
+    border: none;
+}
+#form label {
+    font-family: "merriweather";
+    font-size: 15px;
+}
+.formColor {
+    background-color: #90BEDD;
+}
+#comment {
+    border: none;
+}
+.formHeaders {
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #6C0E23;
+}
+#formButtonPosition {
+    margin: 0;
+}
+
+/*Full-Time Missionary and contact Form*/
+.full-timeBox {
+    background-color: lightgrey;
+    width: 600px;
+    height: 325px;
+    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 50px;;
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+

@@ -1,0 +1,111 @@
+@media only screen and (min-width: 1001px) {
+  /*navigation menu*/
+  .nav-small {
+      display: none;
+  }
+  .nav-med {
+    display: none;
+  }
+  .nav-large #current {
+    color: #90BEDD;
+  }
+  .nav-large {
+    display: block;
+    overflow: hidden;
+  }
+  .nav-large a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: merriweather;
+  }
+
+  /*nav-center*/
+  .nav-center-large {
+    width: 510px;
+    margin: 0 auto;
+  }
+
+  /*dropdown menu*/
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: merriweather;
+    margin: 0;
+    cursor: pointer;
+  }
+  .nav-large a:hover, .dropdown:hover .dropbtn {
+    color: #90BEDD;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 40px;
+  }
+  .dropdown-content a {
+    float: none;
+    color: #6C0E23;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown-content a:hover {
+    color: #90BEDD;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /*text on left and pictures on right*/
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+  }
+  #picMargins {
+    margin-right: 40px;
+    margin-top: 20px;
+  }
+
+  /*logo*/
+  .logo {
+    float: both;
+    margin-left: 150px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .homeBoxPosition {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  /*temple boxes*/
+  .templeBox {
+    background-color: lightgrey;
+    width: 200px;
+    height: 250px;
+    padding: 50px;
+    margin: 18px;
+  }
+  .templeBoxPosition {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: relative;
+  }
+}

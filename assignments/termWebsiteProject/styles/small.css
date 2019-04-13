@@ -1,0 +1,81 @@
+@media only screen and (max-width: 800px) {
+/*navigation menu*/
+.nav-large {
+    display: none;
+}
+.nav-med {
+    display: none;
+}
+.nav-small {
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.nav-small a {
+    display: block; flex: 1 1 auto;
+    text-decoration: none;
+    float: both;
+    text-align: center;
+    font-family: merriweather;
+    color: #6C0E23;
+    margin-bottom: 10px;
+}
+.nav-small a:hover {
+    color: #90BEDD;
+}
+.nav-small li {
+    list-style-type: none;
+}
+.menuButton {
+    border: none;
+    background-color: #90BEDD;
+}
+#menu {
+    margin: 0 auto;
+    padding: 0;
+}
+
+/*logo*/
+.logo-small {
+    float: both;
+    margin-left: 200px;
+}
+  /*temple boxes*/
+  .templeBox {
+    background-color: lightgrey;
+    width: 200px;
+    height: 250px;
+    padding: 50px;
+    margin: 18px;
+  }
+  .templeBoxPosition {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+
+  .reservationBox {
+    background-color: lightgrey;
+    width: 200px;
+    height: 1000px;
+    padding: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#comment {
+    width: 250px;
+    height: 75px;
+}
+.full-timeBox {
+    width: 250px;
+}
+.map-small {
+    width: 250px;
+}
+}

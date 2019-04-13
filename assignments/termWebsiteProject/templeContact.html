@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description"
+        content="This website holds information for The Temple Inn & Suites, a hotel chain specialized for temple patrons of The Church of Jesus Christ of Latter-day Saints.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/all.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <link rel="icon" href="images/templeLogo9.jpg" type="image/gif" sizes="16x16">
+</head>
+
+<body>
+    <header class="nav-large">
+        <h1 class="site-title"><img class="logo" src="images/templeLogo9.jpg" width="400"></h1>
+        <div class="nav-center-large">
+            <a href="templeHome.html">Home</a>
+            <div class="dropdown">
+                <a href="templeTemples.html" class="dropbtn">Temples
+                </a>
+                <div class="dropdown-content">
+                    <a href="templePortoAlegre.html">Porto Alegre Brazil Temple</a>
+                    <a href="templeLosAngeles.html">Los Angeles California Temple</a>
+                    <a href="templeMontevideo.html">Montevideo Uruguay Temple</a>
+                    <a href="templeStGeorge.html">St. George Utah Temple</a>
+                </div>
+            </div>
+            <a href="templeReservations.html">Reservations</a>
+            <div class="dropdown">
+                <a href="templeServices.html" class="dropbtn">Services
+                </a>
+                <div class="dropdown-content">
+                    <a href="templeReception.html">Receptions</a>
+                    <a href="templeFull-time.html">Full-Time Temple Missionary</a>
+                </div>
+            </div>
+            <a href="templeContact.html" id="current">Contact</a>
+
+        </div>
+    </header>
+    <header class="nav-med">
+        <h1 class="site-title"><img class="logo-med" src="images/templeLogo9.jpg" width="400"></h1>
+        <div class="nav-center-med">
+            <a href="templeHome.html">Home</a>
+            <div class="dropdown">
+                <a href="templeTemples.html" class="dropbtn">Temples
+                </a>
+                <div class="dropdown-content">
+                    <a href="templePortoAlegre.html">Porto Alegre Brazil Temple</a>
+                    <a href="templeLosAngeles.html">Los Angeles California Temple</a>
+                    <a href="templeMontevideo.html">Montevideo Uruguay Temple</a>
+                    <a href="templeStGeorge.html">St. George Utah Temple</a>
+                </div>
+            </div>
+            <a href="templeReservations.html">Reservations</a>
+            <div class="dropdown">
+                <a href="templeServices.html" class="dropbtn">Services
+                </a>
+                <div class="dropdown-content">
+                    <a href="templeReception.html">Receptions</a>
+                    <a href="templeFull-time.html">Full-Time Temple Missionary</a>
+                </div>
+            </div>
+            <a href="templeContact.html" id="current">Contact</a>
+
+        </div>
+    </header>
+    <div class="nav-small">
+        <header>
+            <h1 class="site-title"><img class="logo-small" src="images/templeLogo9.jpg" width="400"></h1>
+            <button class="menuButton" onclick="toggleMenu()">&equiv;</button>
+            <ul id="menu" class="hidden">
+                <li><a href="templeHome.html">Home</a></li>
+                <li><a href="templeTemples.html">Temples</a></li>
+                <li> <a href="templePortoAlegre.html">Porto Alegre Brazil Temple</a>
+                </li>
+                <li> <a href="templeLosAngeles.html">Los Angeles California Temple</a>
+                </li>
+                <li> <a href="templeMontevideo.html">Montevideo Uruguay Temple</a>
+                </li>
+                <li> <a href="templeStGeorge.html">St. George Utah Temple</a>
+                </li>
+                <li> <a href="templeReservations.html">Reservations</a>
+                </li>
+                <li> <a href="templeReception.html">Receptions</a>
+                </li>
+                <li> <a href="templeFull-time.html">Full-Time Temple Missionary</a>
+                </li>
+                <li> <a href="templeContact.html" id="current">Contact</a>
+                </li>
+            </ul>
+    </div>
+    </header>
+    </div>
+    <main>
+        <h1>Contact</h1>
+        <h3>The Temple Inn & Suites is headquartered in Bethesda, MD.</h3>
+        <div>
+            <p>
+                <iframe class="map-small"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.404837028468!2d-77.09772048541798!3d38.9832559494852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1555049215616!5m2!1sen!2sus"
+                    width="640" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </p>
+        </div>
+        <h3>Call us at (404)555-1212 for more details or fill out the form below:</h3>
+        <form class="full-timeBox" id="form">
+            <div>
+                <label for="name">Name: </label>
+                <input type="text" class="formColor" id="name" name="name" pattern="[A-Za-z].{5,}" required>
+            </div>
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" class="formColor" id="email" name="email" placeholder="name@example.com" required>
+            </div>
+            <div>
+                <h3 class="formHeaders">Questions</h3>
+                <textarea rows="4" cols="50" name="comment" class="formColor" id="comment" required></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Submit" class="templeButton" id="formButtonPosition">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p class="footerText">
+            &copy; <span id="copyright-year"></span> | Temple Inn & Suites | Carolynn Nottingham
+        </p>
+        <div class="footerText" id="currentDate"></div>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+</body>
+
+</html>
